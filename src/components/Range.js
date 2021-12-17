@@ -7,7 +7,7 @@ function Range(props) {
       <div className="mt-2 rounded-full w-full bg-black">
         <div
           style={{ width: props.percent + "%" }}
-          className="bg-gradient-to-r font-semibold rounded-full from-purple-400 to-pink-500 text-white text-center sm:text-lg"
+          className="bg-gradient-to-r font-semibold rounded-full from-green-400 to-blue-500 text-white text-center sm:text-lg"
         >
           {props.percent + "%"}
         </div>

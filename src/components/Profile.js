@@ -1,5 +1,5 @@
 import React from "react";
-import profile from "../img/profile.jpg";
+import profile from "../img/Profile2.jpg";
 import Skills from "./Skills";
 
 function Profile() {
@@ -17,12 +17,12 @@ function Dev() {
     <div>
       <div className="p-4 w-full group text-center">
         <h1 className="font-bold text-gray-800 sm:tracking-wider text-3xl sm:text-4xl  py-2 text-center w-full">
-          Web Developer
+          Langesh
         </h1>
-        <h1 className="font-bold text-gray-800 tracking-wider text-3xl sm:text-4xl  py-2 text-center w-full">
-          Designer
+        <h1 className="font-bold text-gray-700 sm:tracking-wider text-3xl sm:text-4xl  py-2 text-center w-full">
+          Frontend Dev
         </h1>
-        <span className="w-10 animate-ping sm:animate-none sm:w-16 sm:h-16 font-serif h-10 mx-auto my-10 bg-gradient-to-tr rounded-full text-3xl text-white font-bold flex items-center justify-center from-blue-400 to-pink-500">
+        <span className="w-10 animate-ping  sm:animate-none sm:w-16 sm:h-16 font-serif h-10 mx-auto my-10 bg-gradient-to-tr rounded-full text-2xl text-white font-bold flex items-center justify-center from-green-400 to-blue-500">
           L
         </span>
       </div>
@@ -32,14 +32,17 @@ function Dev() {
 
 function Avatar() {
   return (
-    <div
-      style={{ backgroundImage: `url(${profile})` }}
-      className="bg-cover bg-center h-screen sm:h-80 flex items-center justify-center relative"
-    >
-      <p className="text-white text-5xl sm:text-3xl sm:absolute bottom-0 left-0 p-4 tracking-wider text-roboto">
-        Langesh
-      </p>
-    </div>
+    <>
+      <div
+        className="bg-gradient-to-r  from-green-400
+      to-blue-500 w-full rounded  mx-auto p-4 "
+      >
+        <div
+          style={{ backgroundImage: `url(${profile})` }}
+          className="bg-cover  bg-center h-40 w-40 mx-auto  rounded flex items-center justify-center relative"
+        ></div>
+      </div>
+    </>
   );
 }
 

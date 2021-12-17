@@ -1,14 +1,14 @@
 import React from "react";
 import Contact from "./Contact";
 import Range from "./Range";
-import { FrontEnd, BackEnd, DataBase, Others } from "./SkillContent";
+import { FrontEnd, BackEnd } from "./SkillContent";
 
 function Skills() {
   return (
     <div className="text-left p-4 sm:p-0">
       <header className="flex items-center">
         <span class="material-icons text-3xl text-yellow-500">star_rate</span>
-        <span className="text-3xl pl-2 font-bold text-gray-600">Skills</span>
+        <span className="text-3xl pl-2 font-bold text-gray-800">Skills</span>
       </header>
       <main>
         <Title title="Front End" />
@@ -19,10 +19,7 @@ function Skills() {
         {BackEnd.map((item) => {
           return <Range title={item.lang} key={item.id} percent={item.per} />;
         })}
-        <Title title="Data Base" />
-        {DataBase.map((item) => {
-          return <Range title={item.lang} key={item.id} percent={item.per} />;
-        })}
+
         <Contact />
       </main>
     </div>
@@ -30,7 +27,7 @@ function Skills() {
 }
 
 function Title(props) {
-  return <h1 className="mb-2 mt-6 font-bold text-2xl">{props.title}</h1>;
+  return <h1 className="mb-2 mt-6  font-bold text-2xl">{props.title}</h1>;
 }
 
 export default Skills;
